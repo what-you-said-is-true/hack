@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>人脸识别</title>
+  <link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+<link rel="stylesheet" href="https://static.runoob.com/assets/foundation-icons/foundation-icons.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: rgba(155,215,249,1.00)">
+	<div id="body">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"><i class="fi-cloud"></i>都对科技，祝您健康</a></h1>
+    </li>
+  
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+	<li><a href="index2.html"><i class="fi-arrow-left"></i></a></li>
+      <li><a href="#">help</a></li>
+      <li><a href="#">exit</a></li>
+		 <li><a href="cinema.html"><i class="fi-refresh"></i></a></li>
+		<li><a href="back2.html"><i class="fi-arrow-right"></i></a></li>
+    </ul>
+  </section>
+		</nav>
+<video id="video" width="500px" height="500px" autoplay="autoplay"  ></video>
+		
+		<button type="button" class="button expand" onclick="getMedia()" center><i class="fi-camera"></i> 拍照 </button>
+	</div>
+
+
+
+<script>
+    let video = document.getElementById("video");
+    function getMedia() {
+        let constraints = {
+            video: {width: 500, height: 500},
+          
+        };
+ 
+        let promise = navigator.mediaDevices.getUserMedia(constraints);
+        promise.then(function (MediaStream) {
+            video.srcObject = MediaStream;
+            video.play();
+        }).catch(function (PermissionDeniedError) {
+            console.log(PermissionDeniedError);
+        })
+    }
+	  </script>
+
+
+</body>
+</html>

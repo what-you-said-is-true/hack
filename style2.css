@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+#video{
+		border: 40px;
+		border-color:black;
+		border-radius: 500px;
+		border-style: solid;
+		background-image: url("../lib/9bfc63a55daf82371a2084bfb6835790.jpg");
+	background-position: center;
+	border-width: 40px;
+	position:relative;
+	left:33%;
+	top:15%;
+}
+
+#body{
+	border-bottom: solid;
+	border-bottom-width: 60px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.button{
+	border: solid;
+	border-color: aliceblue;
+	border-width: 10px;
+	position:fixed;
+	top: 20%;
+	overflow: auto;
+}
+
+

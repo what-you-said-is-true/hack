@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bear says game</title>
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+	<link rel="stylesheet" href="https://static.runoob.com/assets/foundation-icons/foundation-icons.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body style="background-color: rgba(155,215,249,1.00)">
+	
+<div id="body">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"><i class="fi-cloud"></i>都对科技，祝您健康</a></h1>
+    </li>
+  
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li><a href="#">help</a></li>
+      <li><a href="#">exit</a></li>
+    </ul>
+  </section>
+</nav>
+
+<div class="container" >
+  <div class="key color celeste" data-color="celeste" id="celeste"></div>
+  <div class="key color verde" data-color="verde" id="verde"></div>
+  <div class="key color amarillo" data-color="amarillo" id="amarillo"></div>
+  <div class="key color mostaza" data-color="mostaza" id="mostaza"></div>
+  <div class="key color naranja" data-color="naranja" id="naranja"></div>
+  <div class="key color rojo" data-color="rojo" id="rojo"></div>
+  <div class="key color rosado" data-color="rosado" id="rosado"></div>
+  <div class="key color violeta" data-color="violeta" id="violeta"></div>
+  <div class="center">
+  <div class="body"></div>
+  <div class="chest"></div>
+  <svg class="panda idle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.13 148">
+    <path class="ear leftear" d="M47.08 17c-5.92-8-13.91-18.74-30-6.82S9 32.86 15 40.84 32.88 50 41.75 43.38 53 25 47.08 17z"/>
+    <path class="ear rightear" d="M152.91 17c5.92-8 13.91-18.74 30-6.82S191 32.86 185 40.84s-17.89 9.16-26.76 2.54S147 25 152.91 17z"/>
+    <path class="head" d="M198.65 74c5.92 40.44-44.32 74-99 74s-106-33.74-99-74C5.6 45.71 25.72 20.42 56.42 8a115 115 0 0 1 43.23-8 118 118 0 0 1 44.7 8.37c30.21 12.33 50.12 37.04 54.3 65.63z" fill="#fff"/>
+    <path class="feature rightpatch" d="M125.52 42.48c-4.77 7-5.2 18.14-3.42 26C125.78 84.86 140.92 93 156 96.94c9.24 2.43 23 3.35 26.51-8C187 74.62 176.29 55.57 168 44.72c-12-15.56-30.14-20.26-42.48-2.24z"/>
+    <path class="feature righteyepatch" d="M130.58 66.16C128 79 153.79 86.93 154.94 71.29c.87-11.93-21.58-18.91-24.36-5.13z" fill="#fff"/>
+    <ellipse class="eye righteye" cx="142.21" cy="70.5" rx="7.5" ry="1" />
+    <path class="feature leftpatch" d="M73 42.48c4.77 7 5.2 18.14 3.42 26C72.73 84.86 57.59 93 42.49 96.94c-9.23 2.43-23 3.35-26.51-8-4.46-14.34 6.25-33.39 14.57-44.24C42.5 29.16 60.66 24.46 73 42.48z"/>
+    <path class="feature lefteyepatch" d="M67.78 66.16C70.37 79 44.56 86.93 43.42 71.29 42.55 59.36 65 52.38 67.78 66.16z" fill="#fff"/>
+    <ellipse class="eye lefteye" cx="56.15" cy="70.5" rx="7.5" ry="1" />
+    <path class="feature nose" d="M87.65 85.55c0-3.45 2.18-6.55 12-6.55s12 3.1 12 6.55c0 4.36-7.64 12-12 12s-12-6.55-12-12z"/>
+    <ellipse class="mouth feature" cx="99.65" cy="123" rx="10" ry="3"/>
+  </svg>
+  </div>
+</div>
+	
+ 
+	  <button  id="btnStart" class="btnStartGame" onClick=window.location.href="cinema.html" style="left: 45%">欢迎</button>
+		
+	
+	<div style="left: 40%; position: absolute; top:96%;font-weight:bold;font-size:19px;color: aliceblue;align-content: center" >请点击“欢迎”进入人脸识别</div>
+		
+
+<script src='js/Tone.min.js'></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/script.js"></script>
+</div>
+
+</body>
+</html>

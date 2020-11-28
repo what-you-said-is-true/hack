@@ -1,0 +1,330 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  border-radius: 50%;
+  margin: 1em auto;
+  align-items: center;
+  width: 90vh;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.center {
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 50px -5px rgba(0, 0, 0, 0.45);
+  display: flex;
+  height: 75%;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  z-index: 10;
+}
+
+.panda {
+  width: 80%;
+  z-index: 10;
+}
+
+.body {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background: black;
+  border-radius: 50%;
+  pointer-events: none;
+  top: 50%;
+}
+
+.chest {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  top: 85%;
+}
+
+.key {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  width: 50%;
+  height: 50%;
+  transition: background 100ms ease-in-out;
+}
+.key:nth-child(1) {
+  background: #0c87c7;
+  -webkit-transform: rotate(-45deg) skewX(-45deg);
+          transform: rotate(-45deg) skewX(-45deg);
+  z-index: 8;
+}
+.celeste.light {
+  background: #95cfed
+}
+.key:nth-child(2) {
+  background: #6e9404;
+  -webkit-transform: rotate(0deg) skewX(-45deg);
+          transform: rotate(0deg) skewX(-45deg);
+  z-index: 7;
+}
+.verde.light {
+  background: #d1df55;
+}
+.key:nth-child(3) {
+  background: #e3af0e;
+  -webkit-transform: rotate(45deg) skewX(-45deg);
+          transform: rotate(45deg) skewX(-45deg);
+  z-index: 6;
+}
+.amarillo.light {
+  background: #f7de8d;
+}
+.key:nth-child(4) {
+  background: #ad762a;
+  -webkit-transform: rotate(90deg) skewX(-45deg);
+          transform: rotate(90deg) skewX(-45deg);
+  z-index: 5;
+}
+.mostaza.light {
+  background: #fbc272;
+}
+.key:nth-child(5) {
+  background: #f6621f;
+  -webkit-transform: rotate(135deg) skewX(-45deg);
+          transform: rotate(135deg) skewX(-45deg);
+  z-index: 4;
+}
+.naranja.light {
+  background: #f99669;
+}
+.key:nth-child(6) {
+  background: #e02424;
+  -webkit-transform: rotate(180deg) skewX(-45deg);
+          transform: rotate(180deg) skewX(-45deg);
+  z-index: 4;
+}
+.rojo.light {
+  background: #e77979;
+}
+.key:nth-child(7) {
+  background: #e82ead;
+  -webkit-transform: rotate(225deg) skewX(-45deg);
+          transform: rotate(225deg) skewX(-45deg);
+  z-index: 3;
+}
+.rosado.light {
+  background: #f6aab6;
+}
+.key:nth-child(8) {
+  background: #8723db;
+  -webkit-transform: rotate(270deg) skewX(-45deg);
+          transform: rotate(270deg) skewX(-45deg);
+  z-index: 2;
+}
+.violeta.light {
+  background: #c7a1e8;
+}
+
+.mouth {
+  transition: ry 150ms ease;
+}
+
+.idle .feature {
+  -webkit-animation: idleFace 3s ease-in-out infinite alternate;
+          animation: idleFace 3s ease-in-out infinite alternate;
+}
+.idle .ear {
+  -webkit-animation: idleEars 3s ease-in-out infinite alternate;
+          animation: idleEars 3s ease-in-out infinite alternate;
+}
+.idle .eye {
+  -webkit-animation: idleFace 3s ease-in-out infinite alternate;
+          animation: idleFace 3s ease-in-out infinite alternate;
+}
+.idle .mouth {
+  -webkit-transform: scaleX(1.3) scaleY(2);
+          transform: scaleX(1.3) scaleY(2);
+  -webkit-animation: idleMouth 3s ease-in-out infinite alternate;
+          animation: idleMouth 3s ease-in-out infinite alternate;
+  -webkit-transform-origin: center 80%;
+          transform-origin: center 80%;
+}
+
+@-webkit-keyframes idleMouth {
+  20% {
+    -webkit-transform: scaleX(1.3) scaleY(2);
+            transform: scaleX(1.3) scaleY(2);
+  }
+  90% {
+    -webkit-transform: scaleX(0.7);
+            transform: scaleX(0.7);
+  }
+  100% {
+    -webkit-transform: scaleX(0.7);
+            transform: scaleX(0.7);
+  }
+}
+
+@keyframes idleMouth {
+  20% {
+    -webkit-transform: scaleX(1.3) scaleY(2);
+            transform: scaleX(1.3) scaleY(2);
+  }
+  90% {
+    -webkit-transform: scaleX(0.7);
+            transform: scaleX(0.7);
+  }
+  100% {
+    -webkit-transform: scaleX(0.7);
+            transform: scaleX(0.7);
+  }
+}
+@-webkit-keyframes idleFace {
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  80% {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+  }
+  100% {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+  }
+}
+@keyframes idleFace {
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  80% {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+  }
+  100% {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+  }
+}
+@-webkit-keyframes idleEars {
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+@keyframes idleEars {
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+.twitter__link {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  z-index: -1;
+  background: #00aced;
+  border-radius: 20px;
+  height: 30px;
+  text-decoration: none;
+  padding-right: 10px;
+  justify-content: space-between;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  width: 74px;
+  opacity: 0.4;
+  z-index: 10;
+}
+.twitter__link:hover {
+  opacity: 1;
+}
+
+.twitter__icon {
+  height: 30px;
+}
+
+.btnStartGame {
+    width: auto;
+    height: auto;
+    background: #ecf0f1;
+    color: #348be2;
+    border-style: none none solid none;
+    border-color: #22a6b3;
+    border-radius: 40px;
+    font-size: 30px;
+    position: absolute;
+    top: calc(80% - 20px);
+    left: calc(50% - auto);
+    outline: none;
+}
+/*#btnStart:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background: #348be2;
+    border-bottom: 4px solid #1f3346;
+	left: 70%;
+	position: absolute;
+	
+}*/
+.hide {
+    display: none;
+}
+#body{
+	border-bottom: solid;
+	border-bottom-width: 50px;
+	width: 100%;
+	height: 100%;
+}
+#nah{
+	color: aliceblue;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	
+}
+#nau{
+	color: aliceblue;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
